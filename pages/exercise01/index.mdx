@@ -1,0 +1,35 @@
+import Ex1Output from "./Ex1Output.re.js"
+
+# Exercise 1: Stateless Component
+
+Let's write a stateless component `ColorSquare` with following specs:
+
+```js
+<ColorSquare color="red" size=50 />
+```
+
+**Properties:**
+- **color**: Red, Green, Blue or Yellow (use [variants](https://reasonml.github.io/docs/en/variant) for this!)
+- **size**: Pixel size starting from 0. Negative numbers are set to 0.
+
+## Tasks
+- Create a file `pages/exercise01/ColorSquare.re` and define a stateless component with the required props
+- Define a variant type for the `color`
+- Define a make function which takes a `~color` and `~size` argument
+- For styling, use either inline styles via the ReasonReact <a href="https://reasonml.github.io/reason-react/docs/en/style#docsNav" target="_blank"> Style API</a> or via CSS-Modules
+
+## Output
+
+Use your `<ColorSquare/>` component in the render function of `pages/exercise01/Ex1Output.re` (will be rendered below):
+
+<Ex1Output />
+
+## Useful Links
+
+- [ReasonReact - Creating a stateless Component](https://reasonml.github.io/reason-react/docs/en/creation-props-self)
+- [ReasonReact - Style API](https://reasonml.github.io/reason-react/docs/en/style)
+
+## Reflect
+- How would this be designed in JS?
+- How well defined are the boundaries of the input?
+

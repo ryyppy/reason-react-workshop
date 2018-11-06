@@ -1,0 +1,39 @@
+import Interactive from "antwar-interactive"
+// import ShiftingColorSquare from "./ShiftingColorSquare.re.js"
+
+# Exercise 2: Stateful Components
+
+We hopefully now have a ColorSquare! Now let's bring it to live by introducing some interactivity :-)<br />
+This time, we will define a component `ShiftingColorSquare`:
+
+`<ShiftingColorSquare startColor=Red shiftAfter=1000 size=50 />`
+
+**Properties:**
+- **start:** Defines the initial color to start with
+- **size:** Pixel size of the `ColorSquare`
+- **shiftAfter:** Shift color after X milliseconds
+
+**Behavior:**
+- The component should be initially rendered with `startColor` as its color
+- Shift colors every `shiftAfter` milliseconds in following pattern 
+    - Red -> Blue
+    - Blue -> Green
+    - Green -> Yellow
+    - Yellow -> Red
+
+## Tasks
+- Create a file `pages/ShiftingColorSquare.re` and define a reducer component
+- Implement the behavior defined above
+- Use `componentDidMount` to start the timer for color switching
+
+## Output
+
+<!-- <Interactive id="./ShiftingColorSquare.re.js" component={ShiftingColorSquare} /> -->
+
+## Links
+- [ReasonReact - Creating a Reducer Component](https://reasonml.github.io/reason-react/docs/en/state-actions-reducer)
+- [ReasonReact - Lifecycle Events](https://reasonml.github.io/reason-react/docs/en/lifecycles)
+- [Reason / BuckleScript - Promises](https://reasonml.github.io/docs/en/promise)
+- [ReasonReact - Style API](https://reasonml.github.io/reason-react/docs/en/style)
+
+
